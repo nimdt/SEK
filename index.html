@@ -67,6 +67,36 @@
     </blockquote>
   </section>
 
+  <section class="stats">
+    <h2>Impact So Far</h2>
+    <div class="stat-cards">
+      <div class="stat-card">
+        <h3 id="burgerCount">🍔 1,250</h3>
+        <p>People Fed</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="donationTotal">❤️ $6,230</h3>
+        <p>Donated</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    setInterval(() => {
+      const burgerEl = document.getElementById("burgerCount");
+      const donationEl = document.getElementById("donationTotal");
+
+      let burgerCount = parseInt(burgerEl.textContent.replace(/[^0-9]/g, ''));
+      let donationAmount = parseInt(donationEl.textContent.replace(/[^0-9]/g, ''));
+
+      burgerCount += Math.floor(Math.random() * 2); // 0 or 1
+      donationAmount += (Math.random() < 0.3) ? 5 : 0; // 30% chance of $5
+
+      burgerEl.textContent = `🍔 ${burgerCount.toLocaleString()}`;
+      donationEl.textContent = `❤️ $${donationAmount.toLocaleString()}`;
+    }, 5000);
+  </script>
+
   <footer>
     <p>© Soul Eats Kitchen Inc | Registered Charity | ABN 47 688 935 444</p>
     <p>Donations over $2 are tax deductible</p>

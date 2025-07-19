@@ -197,3 +197,28 @@ footer {
     width: 100%;
   }
 }
+
+/* Impact Counter Section Styles */
+.stats {
+  background: #fff9e5;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.stat-cards {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.stat-card h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.stat-card p {
+  font-size: 1rem;
+  margin: 0.3rem 0 0;
+}
