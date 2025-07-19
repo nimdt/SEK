@@ -202,7 +202,8 @@ footer {
 .stats {
   background: #fff9e5;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem 0.5rem;
+  margin-top: 1rem;
 }
 
 .stat-cards {
@@ -216,6 +217,7 @@ footer {
 .stat-card h3 {
   font-size: 2rem;
   margin: 0;
+  font-weight: 700;
 }
 
 .stat-card p {
