@@ -200,10 +200,10 @@ footer {
 
 /* Impact Counter Section Styles */
 .stats {
-  background: #fff9e5;
+  background: none;
   text-align: center;
-  padding: 1.5rem 1rem 0.5rem;
-  margin-top: 1rem;
+  padding: 0;
+  margin-bottom: 2rem;
 }
 
 .stat-cards {
